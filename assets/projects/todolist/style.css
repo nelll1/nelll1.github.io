@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+main{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Manrope', sans-serif;
+    background-color: darkslategrey;
+    font-family: 'Manrope', sans-serif;
+}
+.todo-app{
+    width: 100%;
+    max-width: 540px;
+    background-color: #fff;
+    padding: 40px 30px 70px;
+    border-radius: 10px;
+}
+.todo-app img{
+    margin-left: 5px;
+    margin-top: -5px;
+    width: 50px;
+    height: 50px;
+}
+h2{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    font-weight: 600;
+}
+.row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #d5dce7;
+    border-radius: 25px;
+}
+.row input{
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 10px 20px;
+    color: rgb(0, 0, 0);
+    font-weight: 500;
+    font-size: 15px;
+}
+.add{
+    padding: 10px 20px;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    outline: none;
+    border: none;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    background-color: #324157;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.add:hover{
+    background-color: #577098;
+}
+ul li{
+  list-style:none;
+    margin-top: 15px;
+    user-select: none;
+    font-size: 20px;
+    font-weight: 600;
+}
+li{
+    color: #fff;
+    width: 100%;
+    padding: 15px 15px;
+    background-color: #324157;
+    border-radius: 10px;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    text-align: center;
+}
+.container {
+    margin-top: 2px;
+    cursor: pointer;
+  }
+  
+  .container input {
+    display: none;
+  }
+  
+  .container svg {
+    overflow: visible;
+  }
+  
+  .path {
+    fill: none;
+    stroke: white;
+    stroke-width: 6;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    transition: stroke-dasharray 0.5s ease, stroke-dashoffset 0.5s ease;
+    stroke-dasharray: 241 9999999;
+    stroke-dashoffset: 0;
+  }
+  
+  .container input:checked ~ svg .path {
+    stroke-dasharray: 70.5096664428711 9999999;
+    stroke-dashoffset: -262.2723388671875;
+  }
+
+  .delete-button {
+    margin-left: auto;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgb(20, 20, 20);
+    border: none;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.164);
+    cursor: pointer;
+    transition-duration: 0.3s;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .delete-svgIcon {
+    width: 15px;
+    transition-duration: 0.3s;
+  }
+  
+  .delete-svgIcon path {
+    fill: white;
+  }
+  
+  .delete-button:hover {
+     width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    transition-duration: 0.3s;
+    background-color: rgb(255, 69, 69);
+    align-items: center;
+  }
+  
+  .delete-button:hover .delete-svgIcon {
+    width: 20px;
+    transition-duration: 0.3s;
+    transform: translateY(60%);
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+  
+  .delete-button::before {
+    display: none;
+    color: white;
+    transition-duration: 0.3s;
+    font-size: 2px;
+  }
+  
+  .delete-button:hover::before {
+    display: block;
+    padding-right: 10px;
+    font-size: 13px;
+    opacity: 1;
+    transform: translateY(0px);
+    transition-duration: 0.3s;
+  }
+  .completed-container{
+    margin-top: 40px;
+  }
+  .todo-list{
+    margin-top: 15px;
+  }
+  .todo-list, .complete-list{
+    font-size: 18px;
+    font-weight: 500;
+  }
+  
+  @media screen and (max-width: 767px) {
+    .todo-app{
+      width: 100%;
+      height: 100vh;
+    }
+  }

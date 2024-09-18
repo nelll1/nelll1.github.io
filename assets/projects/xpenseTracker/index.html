@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <title>Document</title>
+</head>
+<body>
+<main>
+    <div class="expense-container">
+        <h2>Expense Tracker</h2>
+        <p class="balance-title">Balance:</p>
+        <!--adding money-->
+        <div class="adding-balance">
+            <h1 id="balance">0</h1>
+        <button class="add" id="add-balance"><svg width="40" height="40" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                <path fill="#8b5cf6" d="M16 2A14.172 14.172 0 0 0 2 16a14.172 14.172 0 0 0 14 14a14.172 14.172 0 0 0 14-14A14.172 14.172 0 0 0 16 2Zm8 15h-7v7h-2v-7H8v-2h7V8h2v7h7Z"/>
+                <path fill="none" d="M24 17h-7v7h-2v-7H8v-2h7V8h2v7h7v2z"/>
+            </svg></button>
+        </div>
+        <hr>
+        <p class="history-title">History </p>
+
+        <div class="expense">
+           <!---->
+        </div>
+         
+            
+            <button class="add-expense" id="add-expense">Add Expense</button>
+            <button class="add-expense" id="reset">Reset</button>
+        </div>
+    </div>
+
+    <!--add expenses container-->
+    <div class="add-balanced-container">
+        <h2>Add Balance</h2>
+        <input type="number" class="money-input" placeholder="Add Balance" id="money-input">
+        <textarea name="" id="description" cols="10" rows="5" placeholder="Add Description"></textarea>
+
+        <div class="buttons">
+            <button class="cancel-button">Cancel</button>
+            <button class="submit-button" id="submit-balance">Submit</button>
+        </div>
+    </div>
+
+    <div class="add-expenses-container">
+        <h2>Add Expense</h2>
+        <input type="number" class="money-input" placeholder="Add Expenses" id="expense-input">
+        <textarea name="" id="expense-description" cols="10" rows="5" placeholder="Add Description"></textarea>
+
+        <div class="buttons">
+            <button class="cancel-button">Cancel</button>
+            <button class="submit-button" id="submit-expense">Submit</button>
+        </div>
+        
+</main>
+
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.7.1.js"></script>  
+<script src="main.js"></script> 
+
+</body>
+</html>

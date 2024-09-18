@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+main{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    background-color: black;
+    color: #ffffff;
+}
+.container{
+    width: 600px;
+    height: 690px;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(35,33,46);
+    border-radius: 2px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 1fr);
+    grid-row-gap: 20px;
+    padding: 20px 30px;
+    text-align:left;
+
+}
+.splice-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.splice-container p{
+    margin-right: 11px;
+}
+p {
+    width: 300px;
+}
+ .from,.delete{
+    width: 80px;
+    height: 35px;
+    text-align: center;
+    outline: none;
+ }
+.push-container,.shift-container,.unshift-container,.pop-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 10px;
+}
+ .unshift,.push,.pop{
+    width: 90px;
+    height: 60%;
+    text-align: center;
+    outline: none;
+    border: none;
+    border-radius: 2px;
+
+ }
+
+ .array-container {
+    border: 2px yellow solid;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    padding: 10px 15px;
+    height: 80px;
+}
+
+.text {
+    width: 60px;
+    height: 95%;
+    border: none;
+    border-radius: 5px;
+    background-color: yellow;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.shift,.pop{
+    background-color: rgba(255, 255, 0, 0.6);
+    border: none;
+    width: 90px;
+    height: 35px;
+    cursor: pointer;
+    font-size: 15px;
+    border-radius: 2px;
+    transition: 0.3s;
+}
+.shift:hover,.pop:hover{
+    background-color: rgba(255, 0, 0, 0.441);
+    color: white;
+}
+
+.submit{
+    height: 50px;
+    background-color: rgba(255, 255, 0, 0.6);
+    font-weight: 600;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.submit:hover{
+    background-color: rgba(255, 0, 0, 0.441);
+    color: white;
+}
+span{
+    text-decoration: underline;
+    font-weight: bold;
+    color: violet;
+}
+
+
+
+

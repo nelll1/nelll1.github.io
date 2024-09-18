@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <div class="container">
+            <div class="splice-container">
+                <div class="item">
+                    <input type="text" class="from" id="from" placeholder="from">
+                    <input type="text" class="delete" id="delete" placeholder="delete">
+                </div>
+                <p>The <span>splice</span> method is used to add or remove elements from an array at a specific index.</p>
+            </div>
+            <div class="push-container">
+                <input type="text" class="push" id="push" placeholder="Number">
+                <p>The <span>push</span> is another common array method. It adds one or more elements to the end of an array, increasing its length.</p>
+            </div>
+            
+            <div class="shift-container">
+                <button class="shift" id="shift">Shift</button>
+                <p> The <span>shift</span> method removes the first element from an array and returns that element.
+                     It also reduces the length of the array by 1 and shifts all other elements to lower indexes.</p>
+            </div>
+
+            <div class="unshift-container">
+                <input type="text" class="unshift" id="unshift" placeholder="Number">
+                <p>The <span>unshift</span> method is used to add one or more elements to the beginning of an array. It increases the length of the array and shifts existing elements to higher indexes.</p>
+            </div>
+
+            <div class="pop-container">
+                <button class="pop" id="pop">Pop</button>
+                <p> The <span>pop</span> method removes the last element from an array and returns that element. It reduces the length of the array by 1.</p>
+            </div>
+            <div class="array-container" id="array-container">
+                <div class="text" id="text-0">0</div>
+            </div>
+            <button id="submit" class="submit">SUBMIT</button>
+        </div>
+    </main>
+<script src="main.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+  </script>
+</body>
+</html>

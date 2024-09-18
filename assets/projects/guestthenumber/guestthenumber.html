@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="main.css">
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+  <title>Document</title>
+</head>
+<body>
+  <div class="container">
+    <h1>GUEST THE NUMBER, 0 t0 10</h1>
+    <!--Number guessing-->
+    <div class="number-guesting">
+     <p id="numbers" class="">?</p>
+    </div>
+
+    <!---text showing if answer is correct-->
+    <div class="correct-answer">
+      <p id="answer"></p>
+    </div>
+    <!---container 2-->
+    <div class="container-2">
+      <!--button for generating random number-->
+      <div class="background-button">
+        <button class="button" id="generate">
+          GENE
+          <br>RATE
+        </button>
+      </div>
+        <!---Input answer number-->
+        <input type="number" id="input">
+
+       <!---button for submitting answer-->
+        <div class="background-button">
+          <button class="button" id="submit">
+            SUB
+            <br>MIT
+          </button>
+        </div>
+    </div>
+
+    <!---Hint text-->
+    <div class="hint-text">
+            <p id="hint"></p>
+    </div>
+</div>
+<script src="main.js"></script>
+</body>
+</html>
